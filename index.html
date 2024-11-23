@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pendaftaran NAWP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Menu Pendaftaran NAWP</h2>
+        <form id="formPendaftaran">
+            <div class="input-group">
+                <label for="nik">NIK:</label>
+                <input type="text" id="nik" name="nik" required>
+            </div>
+            <div class="input-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="input-group">
+                <label for="no-dg">No DG:</label>
+                <input type="text" id="no-dg" name="no-dg" required>
+            </div>
+            <div class="input-group">
+                <label for="status">Status:</label>
+                <input type="text" id="status" name="status" required>
+            </div>
+            <div class="input-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="merk">Merk Kendaraan:</label>
+                <input type="text" id="merk" name="merk" required>
+            </div>
+            <div class="input-group">
+                <label for="ktp">Upload KTP:</label>
+                <input type="file" id="ktp" name="ktp" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+            <div class="input-group">
+                <label for="stnk">Upload STNK:</label>
+                <input type="file" id="stnk" name="stnk" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+            <div class="input-group">
+                <label for="no-antrian">No Antrian:</label>
+                <input type="text" id="no-antrian" name="no-antrian" readonly>
+            </div>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
